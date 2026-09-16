@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About Me</title>
+		<!--Last Updated: 26 August 2026, 12:51-->
+		<link rel="stylesheet" type="text/css" href="FormStyles.css">
+		
+		<script type="text/javascript" src="Forms.js"></script>
+	</head>
+
+	<body>
+	
+		<div align="center">
+		<a href="https://www.ecok.edu"><img src="img/ecu.png" alt="black and orange ECU logo" width="280" height="200"></a>
+		</div>
+		<p id="p1">Click the image to be redirected to the ECU homepage.</p>
+
+		<nav>
+			<h1>Page Navigation</h1>
+				<ul>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#class">CS Courses</a></li>
+					<li><a href="#hobby">Hobbies</a></li>
+					<li><a href="#js">JS and Forms</a></li>
+				</ul>
+		</nav>
+		<br>
+
+		<hr>
+		<section id="about">
+			<h1>About Me</h1>
+
+			<p id="p3">
+				<b>My name is Chasey.</b>
+				<br>
+				<b>I am a Computer Science major.<b>
+				<br>
+				<b>This is my first time creating a webpage.</b>
+			</p>
+			<p id="p3">Here is a picture I took during a fall semester on campus:</p>
+			<center><img src="img/leaf.jpg" width="280" height="350" alt="fall colored leaves on a sidewalk"></center>
+		</section>
+		<br>
+		<br>
+
+		<hr>
+		<section id="class">
+			<h1>Computer Science Courses</h1>
+				<nav>
+					<p>The CS courses I have completed:</p>
+				
+					<div class="container">
+					
+						<div class="grid-1">
+							<section>
+								<h2>CMPSC 3323 Internet Programming</h2>
+								<p>I learned the basics of HTML, CSS, and JS. I really want to continue learning more. I created this webpage, because of this course.</p>
+							</section>
+						</div>
+						
+						<div class="grid-2">			
+							<section>
+								<h2>CPSMA 2103 Data Structures</h2>
+								<p>I learned about C++ in this course.</p>
+							</section>
+						</div>
+		
+						<div class="grid-3">			
+							<section>
+								<h2>CMPSC 3543 Object Oriented Program</h2>
+								<p>I was introduced to Python. I really enjoy coding in Python and would like to learn more about it.</p>
+							</section>
+						</div>
+		
+						<div class="grid-4">			
+							<section>
+								<h2>CMPSC 1113/1133 Programming 1 and 2</h2>
+								<p>I learned the basics of how to code in C, as well as terminology for CS.</p>
+							</section>
+						</div>
+						
+						<div class="grid-5">			
+							<section>
+								<h2>Courses I am currently taking:</h2>
+								<p>- Software design and development</p>
+								<p>- Operating Systems</p>
+								<p>- Cloud Computing</p>
+								<p>- Computer Architectures</p>
+							</section>
+						</div>
+					</div>
+		
+				</nav>
+		</section>
+		<br>
+		<br>
+		<br>
+		
+		<hr>
+		<section id="js">
+			<div align="center">
+				<h1>JavaScript and Forms Examples</h1>
+			</div>	
+			
+			<div class="container">
+				<div class="grid grid-6">
+				<section id="arithmetic">
+					<h2>Arithmetic</h2>
+					<p>Enter 2 numbers and select an operator for the results.</p>
+					
+				<form name="ArithmeticForm">
+				<label>First Number:</label>
+					<input type="number" name="firstarithmeticnumber" placeholder="1"/>
+				<br>
+				<label>Second Number:</label>
+					<input type="number" name="secondarithmeticnumber" placeholder="2"/>
+				<br>
+				<br>
+				<legend>Select Operator:</legend><br>
+					<input type="radio" id="addition" name="arithmeticoperator" value="Addition" checked>
+				<label for="addition">Addition</label><br>
+					<input type="radio" id="subtraction" name="arithmeticoperator" value="Subtraction">
+				<label for="addition">Subtraction</label><br>
+					<input type="radio" id="multiplication" name="arithmeticoperator" value="Multiplication">
+				<label for="addition">Multiplication</label><br>
+					<input type="radio" id="division" name="arithmeticoperator" value="Division">
+				<label for="addition">Division</label>
+				<br><br>
+				<button type="button" onclick="performArithmetic()">Calculate</button>
+				</form>
+				</section>
+				<div id="arithOutput"></div>
+				</div>
+						
+				<div class="grid grid-7">			
+				<section id="factorial">
+					<h2>Factorial</h2>
+					<p>Enter a number to see the factorial result.</p>
+								
+				<form name="FactorialForm">
+				<label>Enter Number:</label>
+					<input type="number" name="factorialnumber" placeholder="1">
+				<br><br>
+				<button type="button" onclick="performFactorial()">Calculate</button>
+				</form>	
+				</section>
+				<div id="factOutput"></div>
+				</div>
+		
+				<div class="grid grid-8">			
+				<section id="fibonacci">
+					<h2>Calculate Nth Fibonacci Number</h2>
+					<p>Enter a number to see the fibonacci number.</p>
+				<form name="FibonacciForm">
+				<label>Enter Number:</label>
+					<input type="number" name="fibnum" placeholder="1">
+				<br><br>
+					<button type="button" onclick="fibonacciFinder()"/>Calculate</button>
+				<br>
+				</form>
+				</section>
+				<div id="fibOutput"></div>
+				</div>
+		
+				<div class="grid grid-9">			
+				<section id="range">
+					<h2>Find the Range</h2>
+					<p>Enter 3 numbers to find the range.</p>
+				<form name="RangeForm">
+				<label>First Number:</label>
+					<input type="number" name="firstrangenumber" placeholder="1"/>
+				<br>
+				<label>Second Number:</label>
+					<input type="number" name="secondrangenumber" placeholder="2"/>
+				<br>
+				<label>Third Number:</label>
+					<input type="number" name="thirdrangenumber" placeholder="3"/>
+				<br><br>
+				<button type="button" onclick="performRange()">Calculate</button>
+				</form>
+				</section>
+				<div id="rangeOutput"></div>
+				</div>
+						
+				<br>
+				<br>
+						
+				<div class="grid grid-10">			
+				<section id="mailing">
+					<h2>Join our Mailing List</h2>
+					<p>We'd love to keep you updated!</p>
+					<br>
+								
+				<form name="SignupForm">
+				<label>First Name:</label>
+					<input type="text" name="firstname" placeholder="Jane"/>
+				<br>
+				<label>Last Name:</label>
+					<input type="text" name="lastname" placeholder="Doe"/>
+				<br>
+				<label>Email:</label>
+					<input type="text" name="email" placeholder="jane.doe@email.com"/>
+				<br>
+				<label>Zip Code:</label>
+					<input type="text" name="ZIP" placeholder="12345"/>
+				<br>
+				<br>
+								
+				<button type="button" onclick="addSignup()">Sign Me Up</button>
+				<button type="reset">Reset</button>
+				</section>
+				<div id="signupList"></div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+		</section>
+
+		<br>
+		<br>
+		
+		<hr>
+		<section id="hobby">
+			<h1>Hobbies</h1>
+			<p id="p3" style="text-align: center;"> Some of my favorite activities to do are:</p>
+			  
+			 <div class="container-sm">
+			<div class="grid-11">
+				<section id="hobby">
+					<h3>Go For Walks</h3>
+					<p id="p2">A few pictures from my walks:</p>
+					<center>
+						<img src="img/lake.jpeg" alt="a stream with grown up grass">
+						<img src="img/blossom.jpeg" alt="a purple tree blossom">
+						<img src="img/lamppost.jpeg" alt="a sidewalk with fall leaves and a lamppost">
+					</center>
+				</section>
+			</div>
+						
+						<div class="grid-12">			
+							<section>
+								<h3>Paint</h3>
+								<p id="p2">Some paintings I did recently:</p>
+					<center>
+						<img src="img/sunflower.jpeg" alt="a stream with grown up grass">
+						<img src="img/bloom.jpeg" alt="a purple tree blossom">
+						<img src="img/coffee.jpeg" alt="a sidewalk with fall leaves and a lamppost">
+					</center>
+							</section>
+						</div>
+		
+						<div class="grid-13">			
+							<section>
+								<h3>Try New Foods</h3>
+								<p id="p2">Some of my favorite foods I've tried:</p>
+					<center>
+						<img src="img/dumplings.jpeg" alt="a stream with grown up grass">
+						<img src="img/matcha.jpeg" alt="a purple tree blossom">
+						<img src="img/pizza.jpeg" alt="a sidewalk with fall leaves and a lamppost">
+					</center>
+							</section>
+						</div>
+						</div>
+			<br>
+
+			<p id="p3" style="text-align: center;">A recent playlist I found for some background music while studying:</p>
+			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/CI4f48bh-KA?si=cT9z4aSTXzdphMFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+			<br>
+		</section>
+
+		<br>
+		<hr>
+		<div class="footer" align="center">
+			<a href="#top">Go to top</a>
+		<br>
+		<br>
+
+	</body>
+
+</html>
